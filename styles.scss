@@ -1,0 +1,131 @@
+$recipeBoxColor: #555;
+$recipeColor: #CCC;
+$lightText: #EEE;
+$darkText: #995400;
+$lightBackground: #EEE;
+
+body {
+  font-size: 14px;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:   #800000;
+  background-image:   -moz-radial-gradient(center, ellipse cover, #b30000 0%, #4d0000 100%);
+  background-image:   -webkit-radial-gradient(center, ellipse cover, #b30000 0%, #4d0000 100%);
+  background-image:   -o-radial-gradient(center, ellipse cover, #b30000 0%, #4d0000 100%);
+  background-image:   -ms-radial-gradient(center, ellipse cover, #b30000 0%, #4d0000 100%);
+  background-image:   radial-gradient(center, ellipse cover, #b30000 0%, #4d0000 100%);
+}
+html {
+  min-height: 100%;
+}
+h1 {
+  margin-top: 0;
+  padding: 2px 0px 5px 10px;
+  background-color: $recipeBoxColor;
+  color: $lightText;
+}
+h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 7px;
+  color: $lightText;
+}
+h3 {
+  margin: 0;
+  padding: 0 0 8px 7px;
+  background-color: $recipeBoxColor;
+  color: $lightText;
+}
+h4 {
+  margin: 10px 0 3px 0;
+}
+.line {
+  width: 98.5%;
+  height: 2px;
+  margin: auto;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  background-color: $darkText;
+  box-sizing: border-box;
+}
+button {
+  margin: 5px 0px 2px 5px;
+}
+#sig {
+  float: right;
+  color: $lightText;
+  font-size: 1.2em;
+  margin: 10px;
+}
+.recipeBox {
+  width: 50%;
+  margin: auto;
+  padding: 5px;
+  background-color: $recipeBoxColor;
+  box-sizing: border-box;
+}
+.recipe {
+  background-color: $recipeColor;
+  color: $darkText;
+  font-weight: bold;
+  margin: 5px;
+  padding: 3px;
+}
+.ingredient {
+  font-weight: normal;
+  margin: 0 0 0 10px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  padding-left: 8px;  // Centering of the modal is a little off, so this is a fudge 
+}
+
+.modalBox {
+  margin: 75px auto;
+  border: 10px solid $recipeBoxColor;
+  width: 35%;
+  background-color: $lightBackground;
+}
+
+.modalContent {
+  padding: 0 0 0 10px;
+}
+
+.modalFooter {
+  padding: 0 0 10px 6px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-top: -5px;
+    margin-right: 4px;
+}
+
+.close:hover,
+.close:focus {
+    color: $lightText;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tbRecipeName {
+  width: 96%;
+}
+.tbIngredients {
+  width: 96%;
+}
